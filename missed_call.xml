@@ -33,8 +33,8 @@
       CSeq: [cseq] INVITE
       Diversion: <sip:+61862193670@twilio.com>;reason=unconditional
       Call-ID: [call_id]
-      Via: SIP/2.0/UDP 3.26.241.33:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
-      Contact: <sip:+61423545330@3.26.241.33:5060;transport=udp>
+      Via: SIP/2.0/UDP 127.0.0.1:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
+      Contact: <sip:+61423545330@127.0.0.1:5060;transport=udp>
       Allow: INVITE,ACK,CANCEL,BYE,REFER,OPTIONS,NOTIFY
       X-Twilio-AccountSid: ABC
       User-Agent: Twilio Gateway
@@ -81,12 +81,12 @@
     <![CDATA[
 
       ACK sip:[service]@[remote_ip]:[remote_port] SIP/2.0
-      Via: SIP/2.0/UDP 3.26.241.33:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
+      Via: SIP/2.0/UDP 127.0.0.1:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
       From: <sip:+61423545330@pstn.twilio.com;noa=national>;tag=[pid]SIPpTag00[call_number]
       To: <sip:+61862193670@[remote_ip]:[remote_port]>
       Call-ID: [call_id]
       CSeq: 1 ACK
-      Contact: <sip:+61423545330@3.26.241.33:5060;transport=udp>
+      Contact: <sip:+61423545330@127.0.0.1:5060;transport=udp>
       Max-Forwards: 70
       Subject: Performance Test
       Content-Length: 0
@@ -116,12 +116,12 @@
     <![CDATA[
 
       BYE sip:[service]@[remote_ip]:[remote_port] SIP/2.0
-      Via: SIP/2.0/UDP 3.26.241.33:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
+      Via: SIP/2.0/UDP 127.0.0.1:5060;rport=5060;branch=z9hG4bK2c12c590-e2a9-43d5-a935-3988fbe53036_c3356d0b_655-482155705754625986
       From: <sip:+61423545330@pstn.twilio.com;noa=national>;tag=[pid]SIPpTag00[call_number]
       To: <sip:+61862193670@[remote_ip]:[remote_port]>
       Call-ID: [call_id]
       CSeq: 2 BYE
-      Contact: <sip:+61423545330@3.26.241.33:5060;transport=udp>
+      Contact: <sip:+61423545330@127.0.0.1:5060;transport=udp>
       Max-Forwards: 70
       Subject: Performance Test
       Content-Length: 0
